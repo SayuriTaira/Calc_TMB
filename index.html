@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de TMB</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/calculator-glyph-removebg-preview.png">
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <h1>Calcule sua Taxa Metabólica Basal (TMB)</h1>.
+                <form>
+                    <div>
+                        <label for="weight">Peso</label>
+                        <input type="text" id="weight" maxlength="3" placeholder="Kg">
+                    </div>
+
+                    <div>
+                        <label for="height">Altura</label>
+                        <input type="text" id="height" maxlength="3" placeholder="Cm">
+                    </div>
+
+                    <div>
+                        <label for="years-old">Idade</label>
+                        <input type="text" id="years-old" maxlength="3" placeholder="Anos">
+                    </div>
+
+
+                    <span class="title">Sexo</span>
+
+                    <div>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Masculino</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Feminino</label>
+                    </div>
+
+
+                    <span class="title">Atividade</span>
+                    
+                    <div>
+                        <input type="radio" id="sedentary" name="activity">
+                        <label for="sedentary">Sedentário (pouco ou nenhum exercício)</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="slightly" name="activity">
+                        <label for="slightly">Levemente ativo (1-3 dias por semana)</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="moderately" name="activity">
+                        <label for="moderately">Moderadamente ativo (3-5 dias por semana)</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="very" name="activity">
+                        <label for="very">Muito ativo (6-7 dias por semana)</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" id="extremely" name="activity">
+                        <label for="extremely">Extremamento ativo (2 vezes por dia)</label>
+                    </div>
+                </form>
+                
+                <button class="btn" onclick="tmbCalc()">Calcular</button>
+            </div>
+
+            <div class="content-result">
+                <span class="result-title">Resultado</span>
+
+                <span class="tmb-text"></span>
+                <span class="tmb-result"></span>
+
+                <span class="cal-text">Gasto calórico</span>
+                <span class="cal-text2">(Com base no nível de atividade física)</span>
+                <span class="cal-result"></span>
+
+                <span class="ideal-weight">Peso ideal</span>
+                <span class="ideal-result"></span>
+
+                <span class="cal-to-maintain-weight">Calorias para manter o peso</span>
+                <span class="maintain-weight-result"></span>
+
+                <span class="cal-to-lost-weight">Calorias para perder peso</span>
+                <span class="lost-weight-result"></span>
+
+                <span class="cal-to-gain-weight">Calorias para ganhar peso</span>
+                <span class="gain-weight-result"></span>
+                
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+               

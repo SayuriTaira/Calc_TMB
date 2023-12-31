@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    user-select: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(22, 21, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 840px;
+    height: 520px;
+    background-color: #D0CDC9;
+    border-radius: 30px;
+    display: flex;
+    border: 2px solid #918981;
+}
+
+.content {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 22px;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    margin-top: 11px;
+    position: relative;
+    transform: translateX(-15px);
+}
+
+#weight,
+#height,
+#years-old {
+    left: 55px;
+    border-radius: 3px;
+    border: none;
+    width: 80px;
+    padding-left: 30px;
+    position: absolute;
+}
+
+.title {
+    margin-top: 20px;
+    font-weight: bold;
+    transform: translateX(-15px);
+}
+
+.btn {
+    margin-top: 20px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid #667579;
+    color: black;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #667579;
+    color: white;
+}
+
+.content-result {
+    width: 40%;
+    height: 100%;
+    background-color: #4C5B6C;
+    border-radius: 100px 30px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+label {
+    margin-left: 5px;
+}
+
+.result-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 24px;
+}
+
+.cal-text {
+    font-size: 15px;
+    display: none;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.cal-text2 {
+    font-size: 15px;
+    display: none;
+    font-weight: bold;
+}
+
+.tmb-text {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.tmb-result {
+    font-size: 30px;
+    color: #D0CDC9;
+}
+
+.cal-result {
+    color: #D0CDC9;
+    font-size: 30px;
+}
+
+.ideal-weight {
+    display: none;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.ideal-result {
+    color: #D0CDC9;
+    font-size: 25px;
+}
+
+.cal-to-lost-weight {
+    font-weight: bold;
+    display: none;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.lost-weight-result {
+    font-size: 25px;
+    color: #D0CDC9;
+    display: none;
+}
+
+.cal-to-gain-weight {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    display: none;
+}
+
+.gain-weight-result {
+    font-size: 25px;
+    color: #D0CDC9;
+    display: none;
+}
+
+.cal-to-maintain-weight {
+    font-weight: bold;
+    margin-top: 25px;
+    display: none;
+    font-size: 15px;
+}
+
+.maintain-weight-result {
+    font-size: 25px;
+    color: #D0CDC9;
+    display: none;
+}
